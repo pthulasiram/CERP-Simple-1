@@ -55,7 +55,7 @@ var conversation = watson.conversation( {
 
 // Endpoint to be call from the client side
 app.post( '/api/message', function(req, res) {
-  var workspace = process.env.WORKSPACE_ID || '<workspace-id>';
+  var workspace = '70b41316-84ce-4706-b904-9eac2b1e2571' || '<workspace-id>';
   if ( !workspace || workspace === '<workspace-id>' ) {
     return res.json( {
       'output': {
